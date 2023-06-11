@@ -1018,7 +1018,7 @@
 //   case "Chile":
 //     message = "Shipping to Chile will cost 250 credits";
 //     break;
-//   case "Jamaica": 
+//   case "Jamaica":
 //     message = "Shipping to Jamaica will cost 120 credits";
 //     break;
 //   default:
@@ -1036,3 +1036,247 @@
 // getShippingCost("Chile"); // повертає "Shipping to Chile will cost 250 credits"
 // getShippingCost("Jamaica"); // повертає "Shipping to Jamaica will cost 120 credits"
 // getShippingCost("Sweden"); // повертає "Sorry, there is no delivery to your country"
+
+
+/**
+  |============================
+  | Lesson 30
+  |============================
+*/
+
+// Функція getNameLength(name) приймає ім'я (параметр name) і повертає рядок, в якому вказана його довжина. Доповни шаблонний рядок у змінній message довжиною рядка з параметра name.
+
+// Оголошена функція getNameLength(name)
+// Виклик функції getNameLength("Poly") повертає "Name Poly is 4 characters long"
+// Виклик функції getNameLength("Harambe") повертає "Name Harambe is 6 characters long"
+// Виклик функції getNameLength("Billy") повертає "Name Billy is 5 characters long"
+// Виклик функції getNameLength("Joe") повертає "Name Joe is 3 characters long"
+
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; //
+//   console.log(message);
+//   return message;
+// }
+
+// getNameLength("Poly"); // повертає "Name Poly is 4 characters long"
+// getNameLength("Harambe"); // повертає "Name Harambe is 6 characters long"
+// getNameLength("Billy"); // повертає "Name Billy is 5 characters long"
+// getNameLength("Joe"); // повертає "Name Joe is 3 characters long"
+
+
+/**
+  |============================
+  | Lesson 31
+  |============================
+*/
+
+// Доповни код, присвоївши оголошеним змінним вирази звертання до відповідних елементів або властивостей рядка у змінній course.
+
+// courseTopicLength - довжина рядка.
+// firstElement - перший символ рядка.
+// lastElement - останній символ рядка.
+// Оголошена змінна courseTopic
+// Значення змінної courseTopic - це рядок "JavaScript essentials"
+// Оголошена змінна courseTopicLength
+// Значення змінної courseTopicLength - це число 21
+// Оголошена змінна firstElement
+// Значення змінної firstElement - це рядок "J"
+// Оголошена змінна lastElement
+// Значення змінної lastElement - це рядок "s"
+
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length -1];
+
+// // Change code above this line
+// console.log(courseTopic);
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
+
+/**
+  |============================
+  | Lesson 32
+  |============================
+*/
+
+// Функція getSubstring(string, length) приймає рядок і повертає підрядок від початку і до length символів. Вона оголошує два параметри, значення яких будуть задаватися під час її виклику:
+
+// string - оригінальний рядок
+// length - кількість символів з початку рядка для підрядка
+// Присвой змінній substring вираз створення підрядка довжиною length символів (від початку) з рядка string.
+
+// Оголошена функція getSubstring(string, length)
+// Виклик функції getSubstring("Hello world", 3) повертає "Hel"
+// Виклик функції getSubstring("Hello world", 6) повертає "Hello"
+// Виклик функції getSubstring("Hello world", 8) повертає "Hello wo"
+// Виклик функції getSubstring("Hello world", 11) повертає "Hello world"
+// Виклик функції getSubstring("Hello world", 0) повертає ""
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+// console.log(substring);
+//   return substring;
+// }
+
+// getSubstring("Hello world", 3); // повертає "Hel"
+// getSubstring("Hello world", 6); // повертає "Hello"
+// getSubstring("Hello world", 8); // повертає "Hello wo"
+// getSubstring("Hello world", 11); // повертає "Hello world"
+// getSubstring("Hello world", 0); // повертає ""
+
+/**
+  |============================
+  | Lesson 33
+  |============================
+*/
+
+// Функція formatMessage(message, maxLength) приймає рядок (параметр message) і форматує його, якщо довжина перевищує значення в параметрі maxLength.
+
+// Доповни код функції таким чином, що якщо довжина рядка:
+
+// не перевищує maxLength, функція повертає його в початковому вигляді.
+// більша за maxLength, то функція обрізає рядок до maxLength символів і додає в кінець три крапки "...", після чого повертає скорочену версію.
+// Оголошена функція formatMessage(message, maxLength)
+// Виклик функції formatMessage("Curabitur ligula sapien", 16) повертає "Curabitur ligula..."
+// Виклик функції formatMessage("Curabitur ligula sapien", 23) повертає "Curabitur ligula sapien"
+// Виклик функції formatMessage("Vestibulum facilisis purus nec", 20) повертає "Vestibulum facilisis..."
+// Виклик функції formatMessage("Vestibulum facilisis purus nec", 30) повертає "Vestibulum facilisis purus nec"
+// Виклик функції formatMessage("Nunc sed turpis a felis in nunc fringilla", 15) повертає "Nunc sed turpis..."
+// Виклик функції formatMessage("Nunc sed turpis a felis in nunc fringilla", 41) повертає "Nunc sed turpis a felis in nunc fringilla"
+
+
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+// if (message.length <= maxLength) {
+// result = message;
+// } else {
+// result = message.slice(0, maxLength) + "...";
+// }
+//   /// Change code above this line
+//   console.log(result);
+//   return result;
+// }
+
+// formatMessage("Curabitur ligula sapien", 16); // повертає "Curabitur ligula..."
+// formatMessage("Curabitur ligula sapien", 23); // повертає "Curabitur ligula sapien"
+// formatMessage("Vestibulum facilisis purus nec", 20); // повертає "Vestibulum facilisis..."
+// formatMessage("Vestibulum facilisis purus nec", 30); // повертає "Vestibulum facilisis purus nec"
+// formatMessage("Nunc sed turpis a felis in nunc fringilla", 15); // повертає "Nunc sed turpis..."
+// formatMessage("Nunc sed turpis a felis in nunc fringilla", 41); // повертає "Nunc sed turpis a felis in nunc fringilla"
+
+
+/**
+  |============================
+  | Lesson 34
+  |============================
+*/
+
+// Функція normalizeInput(input) приймає рядок (параметр input) і повертає такий самий рядок, але в нижньому регістрі. Присвой змінній normalizedInput вираз створення рядка у нижньому регістрі з параметра input.
+
+// Оголошена функція normalizeInput(input)
+// Виклик функції normalizeInput("Hello world") повертає "hello world"
+// Виклик функції normalizeInput("This ISN'T SpaM") повертає "this isn't spam"
+// Виклик функції normalizeInput("Big SALE") повертає "big sale"
+
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+
+//   console.log(normalizeInput);
+//   return normalizedInput;
+// }
+
+// normalizeInput("Hello world"); // повертає "hello world"
+// normalizeInput("This ISN'T SpaM"); // повертає "this isn't spam"
+// normalizeInput("Big SALE"); // повертає "big sale"
+
+
+/**
+  |============================
+  | Lesson 35
+  |============================
+*/
+
+// Функція checkForName(fullname, name) приймає два параметри та повертає буль true або false - результат перевірки входження підрядка name у рядок fullname.
+
+// fullname - повне ім'я, що складається з двох слів (імені та прізвища), розділених пробілом.
+// name - ім'я для перевірки входження в повне ім'я.
+// Присвой змінній result вираз перевірки входження імені (параметр name), у повне ім'я (параметр fullname). Нехай функція чітко розрізняє регістр літер, тобто «Петя» і «петя» - для неї різні імена.
+
+// Оголошена функція checkForName(fullname, name).
+// Виклик функції checkForName("Egor Kolbasov", "Egor") повертає true
+// Виклик функції checkForName("Egor Kolbasov", "egor") повертає false
+// Виклик функції checkForName("Egor Kolbasov", "egOr") повертає false
+// Виклик функції checkForName("Egor Kolbasov", "Zhenya") повертає false
+// Виклик функції checkForName("Vadim Nekrasov", "Vadim") повертає true
+// Виклик функції checkForName("Vadim Nekrasov", "vadim") повертає false
+// Виклик функції checkForName("Vadim Nekrasov", "Dima") повертає false
+
+
+// function checkForName(fullName, name) {
+//   const result = fullName.includes(name); // Change this line
+//   console.log(result);
+//   return result;
+// }
+
+// checkForName("Egor Kolbasov", "egor"); // повертає false
+// checkForName("Egor Kolbasov", "Egor"); // повертає true
+// checkForName("Egor Kolbasov", "egOr"); // повертає false
+// checkForName("Egor Kolbasov", "Zhenya"); // повертає false
+// checkForName("Vadim Nekrasov", "Vadim"); // повертає true
+// checkForName("Vadim Nekrasov", "vadim"); // повертає false
+// checkForName("Vadim Nekrasov", "Dima"); // повертає false
+
+
+/**
+  |============================
+  | Lesson
+  |============================
+*/
+
+// Функція checkForSpam(message) приймає рядок (параметр message), перевіряє його на вміст заборонених слів spam і sale, і повертає результат перевірки. Слова в рядку параметра message можуть бути у довільному регістрі, наприклад SPAM або sAlE.
+
+// Якщо знайшли заборонене слово (spam або sale) то функція повертає буль true.
+// Якщо в рядку відсутні заборонені слова, функція повертає буль false.
+// Оголошена функція checkForSpam(message).
+// Виклик функції checkForSpam("Latest technology news") повертає false
+// Виклик функції checkForSpam("JavaScript weekly newsletter")повертає false
+// Виклик функції checkForSpam("Get best sale offers now!") повертає true
+// Виклик функції checkForSpam("Amazing SalE, only tonight!") повертає true
+// Виклик функції checkForSpam("Trust me, this is not a spam message") повертає true
+// Виклик функції checkForSpam("Get rid of sPaM emails. Our book in on sale!") повертає true
+// Виклик функції checkForSpam("[SPAM] How to earn fast money?") повертає true
+
+
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   message = message.toLowerCase();
+//   if (message.includes("spam") || (message.includes("sale"))) {
+//     return true;
+//   } else {
+//     console.log(result);
+//     return false;
+//   }
+//   // Change code above this line
+//   return result;
+// }
+
+// checkForSpam("Latest technology news"); // повертає false
+// checkForSpam("JavaScript weekly newsletter"); // повертає false
+// checkForSpam("Get best sale offers now!"); // повертає true
+// checkForSpam("Amazing SalE, only tonight!"); // повертає true
+// checkForSpam("Trust me, this is not a spam message"); // повертає true
+// checkForSpam("Get rid of sPaM emails. Our book in on sale!"); // повертає true
+// checkForSpam("[SPAM] How to earn fast money?"); // повертає true
+
+
+/**
+  |============================
+  | The END...to be continue
+  |============================
+*/
